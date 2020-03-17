@@ -39,7 +39,7 @@ export default function Header(props) {
   const headerColorChange = () => {
     const { color, changeColorOnScroll } = props;
     const windowsScrollTop = window.pageYOffset;
-    if (windowsScrollTop > changeColorOnScroll.height) {
+    if (windowsScrollTop + 350 > changeColorOnScroll.height) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[color]);
@@ -66,6 +66,7 @@ export default function Header(props) {
     <div >
       <Button className={classes.title}>
         <img style={{ width: 70, borderStyle: 'solid', borderWidth: 1, borderRadius: '50%' }} src={team1} alt="..." />
+        
       </Button>
 
     </div>

@@ -16,7 +16,6 @@ import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 import Lottie from 'react-lottie';
-import * as animationData from '../assets/lottie/office.json'
 
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
@@ -26,6 +25,7 @@ const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
 
+const animationBook = require('assets/lottie/worker.json')
 export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
@@ -33,7 +33,7 @@ export default function LandingPage(props) {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: animationBook,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
     }
@@ -48,23 +48,26 @@ export default function LandingPage(props) {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 300,
-          color: "white"
+          height: 400,
+          color: "black"
         }}
         {...rest}
       />
-      <Parallax responsive style={{ backgroundColor: '#fff' }}>
-        <div className={classes.container}>
+     <Parallax responsive style={{ backgroundColor: '#fff' }}>
+        <div style={{ marginTop: 100 }} className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>A realização do seu sonho começa aqui.</h1>
+              <h3>
+                Nós Somos Quinto Paralelo!
+              </h3>
               <h4>
                 Studio criativo que anda em paralelo com a arquitetura e o design!
               </h4>
               <br />
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <Lottie options={defaultOptions}
+              <Lottie style={{zIndex: 10000, pointerEvents: 'none'}} options={defaultOptions}
                 height={400}
                 width={400}
                 />

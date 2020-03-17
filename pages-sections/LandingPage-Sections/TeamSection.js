@@ -16,9 +16,9 @@ import CardFooter from "components/Card/CardFooter.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import team1 from "assets/img/ana.png";
+import team2 from "assets/img/marcos.png";
+import team3 from "assets/img/zeus.png";
 
 const useStyles = makeStyles(styles);
 
@@ -31,7 +31,7 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
+      <h2 className={classes.title}>Nosso Time</h2>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
@@ -40,40 +40,26 @@ export default function TeamSection() {
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Gigi Hadid
+                Ana Letícia
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Arquiteta/Designer</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  Sou Linda e inteligênte, diferente do meu sócio, entre meus hobbys estão, gastar dinheiro, dormir e projetar.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
+
                 <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
+                  onClick={() => window.open("https://www.instagram.com/anaaleticiac/", '_blank')}
                   justIcon
                   color="transparent"
                   className={classes.margin5}
                 >
                   <i className={classes.socials + " fab fa-instagram"} />
                 </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
+
               </CardFooter>
             </Card>
           </GridItem>
@@ -83,33 +69,25 @@ export default function TeamSection() {
                 <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Christian Louboutin
+                Marcos
                 <br />
-                <small className={classes.smallTitle}>Designer</small>
+                <small className={classes.smallTitle}>Arquiteta/Designer</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  Sou Só feio que doi, mas é o rosto que nasci, não tem o que fazer.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button
+                  onClick={() => window.open("https://www.instagram.com/marcosfer__/", '_blank')}
                   justIcon
                   color="transparent"
                   className={classes.margin5}
                 >
-                  <i className={classes.socials + " fab fa-twitter"} />
+                  <i className={classes.socials + " fab fa-instagram"} />
                 </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-linkedin"} />
-                </Button>
+                
               </CardFooter>
             </Card>
           </GridItem>
@@ -119,16 +97,13 @@ export default function TeamSection() {
                 <img src={team3} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Kendall Jenner
+                ZEUS
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Estagiário</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  Sou um Cachorro do capiroto, não auieto meu cu.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -141,6 +116,7 @@ export default function TeamSection() {
                 </Button>
                 <Button
                   justIcon
+                  onClick={() => window.open("https://www.instagram.com/zeussamoieda/", '_blank')}
                   color="transparent"
                   className={classes.margin5}
                 >
