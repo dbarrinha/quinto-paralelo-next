@@ -24,7 +24,15 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={6}>
           <h2 className={classes.title}>Quem Somos</h2>
           <h5 className={classes.description}>
-            Somos um grupo de amigos com o sonho de ganhar dinheiro pra viajar.
+          O Quinto Paralelo surgiu através de um trabalho acadêmico, 
+          mas agora é nosso filho profissional. Nós o batizamos assim, 
+          porque queríamos trazer uma referência geográfica ao mesmo. 
+          Acontece que, a capital Teresina, está localizada no quinto 
+          paralelo do globo terrestre – daí o nome. Também somos as duas 
+          retas paralelas, uma ao lado da outra. Somos dois, mas ao mesmo 
+          tempo somos um. Aqui há dois jovens que buscam com a arquitetura e o 
+          design mudar vidas daqueles que acreditam que estruturas, sistemas e 
+          cores podem oferecer o que buscam.
           </h5>
         </GridItem>
       </GridContainer>
