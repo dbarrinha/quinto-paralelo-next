@@ -34,6 +34,7 @@ export default function LandingPage(props) {
     loop: true,
     autoplay: true,
     animationData: animationBook,
+    speed: 500,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
     }
@@ -123,10 +124,13 @@ export default function LandingPage(props) {
           </GridContainer>
         </div>
       </Parallax>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+
       <div className={classes.container}>
         <ProductSection />
         <TeamSection />
         <WorkSection />
+      </div>
       </div>
       <Footer />
     </div>
