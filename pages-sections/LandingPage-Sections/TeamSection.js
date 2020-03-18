@@ -46,7 +46,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  Sou Linda e inteligênte, diferente do meu sócio, entre meus hobbys estão, gastar dinheiro, dormir e projetar.
+                  Sou Linda e inteligente, diferente do meu sócio, entre meus hobbys estão, gastar dinheiro, dormir e projetar.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
