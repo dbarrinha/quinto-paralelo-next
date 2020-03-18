@@ -106,7 +106,7 @@ export default function LandingPage(props) {
           borderTopLeftRadius: '100%'
         }} />
 
-        <div style={{ marginTop: 200 }} className={classes.container}>
+        <div  className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>A realização do seu sonho começa aqui.</h1>

@@ -17,8 +17,6 @@ const headerStyle = {
     display: "flex",
     border: "0",
     borderRadius: "3px",
-    padding: "0.625rem 0",
-    marginBottom: "20px",
     color: "#555",
     width: "100%",
     backgroundColor: "#fff",
@@ -29,11 +27,12 @@ const headerStyle = {
     flexFlow: "row nowrap",
     justifyContent: "flex-start",
     position: "relative",
-    zIndex: "unset"
+    zIndex: "unset",
+    height: 100
   },
   absolute: {
     position: "absolute",
-    zIndex: "1100"
+    zIndex: "1100",
   },
   fixed: {
     position: "fixed",
