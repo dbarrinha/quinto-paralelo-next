@@ -21,7 +21,7 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
       
-        <GridItem xs={12} sm={12} md={6}>
+        <GridItem xs={12} sm={12} md={10}>
           <h2 className={classes.title}>Quem Somos</h2>
           <h5 className={classes.description}>
           O Quinto Paralelo surgiu através de um trabalho acadêmico, 
