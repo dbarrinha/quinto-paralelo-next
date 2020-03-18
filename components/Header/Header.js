@@ -33,6 +33,25 @@ export default function Header(props) {
       }
     };
   });
+
+  const scrollTo = (id) => {
+    let section = document.querySelector(id)
+
+    if(id = "#header"){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 200, function () {
+       // window.location.hash = hash;
+      });
+    }else{
+      $('html, body').animate({
+        scrollTop: $(section).offset().top
+      }, 200, function () {
+       // window.location.hash = hash;
+      });
+    }
+  }
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -64,7 +83,7 @@ export default function Header(props) {
   });
   const brandComponent = (
     <div >
-      <Button className={classes.title}>
+      <Button onClick={()=> scrollTo('#header')} className={classes.title}>
         <img style={{ width: 70, borderStyle: 'solid', borderWidth: 1, borderRadius: '50%' }} src={team1} alt="..." />
         
       </Button>

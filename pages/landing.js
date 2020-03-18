@@ -45,6 +45,9 @@ export default function LandingPage(props) {
     primaryColorOpacity: '#e8bd80',
   }
 
+  
+
+
   return (
     <div>
       <Header
@@ -60,9 +63,9 @@ export default function LandingPage(props) {
         {...rest}
       />
 
-      <Parallax responsive style={{ backgroundColor: '#fff', height: '100vh' }}>
+      <Parallax  responsive style={{ backgroundColor: '#fff', height: '100vh' }}>
 
-        <div style={{
+        <div id="header" style={{
           width: '70%',
           height: '50%',
           backgroundColor: cores.primaryColor,
@@ -111,7 +114,7 @@ export default function LandingPage(props) {
                 <strong>Nós Somos Quinto Paralelo!</strong>
               </h3>
               <h4>
-              <strong>Studio criativo que anda em paralelo com a arquitetura e o design!</strong>
+                <strong>Studio criativo que anda em paralelo com a arquitetura e o design!</strong>
               </h4>
               <br />
             </GridItem>
@@ -126,11 +129,11 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
 
-      <div className={classes.container}>
-        <ProductSection />
-        <TeamSection />
-        <WorkSection />
-      </div>
+        <div className={classes.container}>
+          <ProductSection />
+          <TeamSection />
+          <WorkSection />
+        </div>
       </div>
       <Footer />
     </div>

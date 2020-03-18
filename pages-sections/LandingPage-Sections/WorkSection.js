@@ -17,7 +17,7 @@ const useStyles = makeStyles(styles);
 export default function WorkSection() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
+    <div  id="contato" className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Vem dar um "oi" pro <a href="mailto:dbarrinha@hotmail.com"> Quinto //</a></h2>

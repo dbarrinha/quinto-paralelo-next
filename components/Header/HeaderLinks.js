@@ -10,12 +10,58 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
+
+  const scrollTo = (id) => {
+    let section = document.querySelector(id)
+
+    if (id == "#header") {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 200, function () {
+        // window.location.hash = hash;
+      });
+    } else {
+      $('html, body').animate({
+        scrollTop: $(section).offset().top
+      }, 200, function () {
+        // window.location.hash = hash;
+      });
+    }
+  }
+
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
+        <ListItem className={classes.listItem}>
+          <Button
+            onClick={() => scrollTo('#about')}
+            color="transparent"
+            className={classes.navLink}
+          >
+            Sobre
+        </Button>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Button
+            onClick={() => scrollTo('#team')}
+            color="transparent"
+            className={classes.navLink}
+          >
+            Time
+        </Button>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Button
+            onClick={() => scrollTo('#contato')}
+            color="transparent"
+            className={classes.navLink}
+          >
+            Contato
+        </Button>
+        </ListItem>
         <Tooltip
           id="instagram-tooltip"
-          title="Nos siga no instagram"
+          title="Siga-nos no Instagram"
           placement={"top"}
           classes={{ tooltip: classes.tooltip }}
         >
