@@ -54,12 +54,12 @@ export default function LandingPage(props) {
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "black"
+          color: "white"
         }}
         {...rest}
       />
 
-      <Parallax responsive style={{ backgroundColor: '#fff' }}>
+      <Parallax responsive style={{ backgroundColor: '#fff', height: '100vh' }}>
 
         <div style={{
           width: '70%',
@@ -102,7 +102,7 @@ export default function LandingPage(props) {
           borderTopLeftRadius: '100%'
         }} />
 
-        <div style={{ marginTop: 100 }} className={classes.container}>
+        <div style={{ marginTop: 200 }} className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>A realização do seu sonho começa aqui.</h1>
