@@ -20,7 +20,7 @@ export default function WorkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Vamos Conversar <a href="mailto:dbarrinha@hotmail.com">--- Quinto Paralelo</a></h2>
+          <h2 className={classes.title}>Vem dar um "oi" pro <a href="mailto:dbarrinha@hotmail.com"> Quinto //</a></h2>
           
         </GridItem>
       </GridContainer>
