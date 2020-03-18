@@ -10,7 +10,8 @@ const parallaxStyle = theme => ({
     padding: "0",
     border: "0",
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
+    backgroundColor: '#fff'
   },
   filter: {
     "&:before": {
@@ -37,6 +38,10 @@ const parallaxStyle = theme => ({
     [theme.breakpoints.down("sm")]: {
       minHeight: "660px",
       paddingTop: "350px"
+    },
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "660px",
+      paddingTop: "450px"
     }
   }
 });

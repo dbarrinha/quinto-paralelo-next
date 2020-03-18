@@ -63,7 +63,7 @@ export default function LandingPage(props) {
         {...rest}
       />
 
-      <Parallax  responsive style={{ backgroundColor: '#fff', height: '100vh' }}>
+      <Parallax  responsive >
 
         <div id="header" style={{
           width: '70%',
